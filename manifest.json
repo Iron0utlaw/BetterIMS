@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Better IMS",
+    "version": "1.0",
+    "description": "Description of your extension",
+    "permissions": [
+      "https://www.imsnsit.org/imsnsit/*",
+      "storage"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "Extension Popup Title"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.imsnsit.org/imsnsit/*"],
+        "js": ["app.js"],
+        "css": ["app.css"]
+      }
+    ],
+    // "background": {
+    //   "scripts": ["background.js"],
+    //   "persistent": false
+    // },
+    "web_accessible_resources": [
+      "images/*",
+      "fonts/*"
+    ]
+  }
+  
