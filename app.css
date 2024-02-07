@@ -1,4 +1,9 @@
-table img{
-    border-width: 20px;
-    border-color: brown;
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+table{
+    height: 100%;
+    margin: 0;
 }
